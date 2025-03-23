@@ -1,0 +1,18 @@
+name: yolo_ocr
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.16 
+  - pandas
+  - opencv
+  - numpy
+  - scipy
+  - filterpy=1.4.5
+  - nomkl  # Ensures MKL is not installed
+  - scikit-image
+  - lap=0.4.0
+  - pip
+  - pip:
+      - ultralytics==8.3.94
+      - easyocr
